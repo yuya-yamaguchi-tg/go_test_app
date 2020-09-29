@@ -3,6 +3,8 @@ package main
 import (
 	"strconv"
 
+	"go_test_app/hoge"
+
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
@@ -30,7 +32,7 @@ func gormConnect() *gorm.DB {
 }
 
 func main() {
-
+	hoge.Hoge()
 	router := gin.Default()
 	router.LoadHTMLGlob("views/*.html")
 
