@@ -14,7 +14,7 @@ type User struct {
 	Id   int
 	Name string
 }
-
+// コメント
 func gormConnect() *gorm.DB {
 	DBMS := "mysql"
 	USER := "root"
